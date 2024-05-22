@@ -1,0 +1,42 @@
+---
+const response = await fetch("https://dragonball-api.com/api/characters");
+const characters: any = await response.json();
+
+
+interface Character {
+  id: number;
+  name: string;
+  ki: string;
+  maxKi: string;
+  race: string;
+  gender: string;
+  description: string;
+  image: string;
+  affiliation: string;
+}
+---
+
+<h1>Listado de Heroes</h1>
+<div class="row">
+  {
+    characters.items.map((character: Character) => (
+      <div class="col-3 mb-3">
+        <div class="card bg-dark text-white text-center">
+          <img class="card-img-top img-character" src={character.image} alt="Card image cap" />
+          <div class="card-body">
+            <h5 class="card-title">{character.name}</h5>
+            <p class="card-text description-character">
+              {
+                character.description
+              }
+            </p>
+            <a href={'/character/'+character.id} class="btn btn-primary">
+              Go somewhere
+            </a>
+          </div>
+        </div>
+      </div>
+    ))
+  }
+</div>
+<p>Listado de heroes</p>
