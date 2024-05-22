@@ -22,7 +22,7 @@ interface Character {
     characters.items.map((character: Character) => (
       <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-3">
         <div class="card bg-dark text-white text-center">
-          <img class="card-img-top img-character" src={character.image} alt="Card image cap" />
+          <img loading="lazy" class="card-img-top img-character" src={character.image} alt="Card image cap" />
           <div class="card-body">
             <h5 class="card-title">{character.name}</h5>
             <p class="card-text description-character">
