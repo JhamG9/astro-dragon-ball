@@ -1,0 +1,13 @@
+.img-detail-character{
+    max-width: 100%;
+    max-height: 500px;
+}
+
+.back-icon-detail{
+    text-decoration: none;
+}
+
+.content-back-icon{
+    width: max-content;
+    cursor: pointer;
+}

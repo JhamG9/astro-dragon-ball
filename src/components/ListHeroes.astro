@@ -16,11 +16,11 @@ interface Character {
 }
 ---
 
-<h1>Listado de Heroes</h1>
-<div class="row">
+<h1 class="text-center">Listado de Heroes</h1>
+<div class="row mt-4">
   {
     characters.items.map((character: Character) => (
-      <div class="col-3 mb-3">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-3">
         <div class="card bg-dark text-white text-center">
           <img class="card-img-top img-character" src={character.image} alt="Card image cap" />
           <div class="card-body">
@@ -31,7 +31,7 @@ interface Character {
               }
             </p>
             <a href={'/character/'+character.id} class="btn btn-primary">
-              Go somewhere
+              Ver a {character.name}
             </a>
           </div>
         </div>
