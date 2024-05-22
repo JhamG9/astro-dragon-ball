@@ -10,6 +10,9 @@ npm create astro@latest -- --template minimal
 
 > 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
+## 💻 Demo App
+Click here to [Open Demo Dragon Ball Astro App](https://jhamg9.github.io/astro-dragon-ball/)
+![Demo Dragon Ball Astro App](https://raw.githubusercontent.com/JhamG9/astro-dragon-ball/main/public/demo-app.png)
 ## 🚀 Project Structure
 
 Inside of your Astro project, you'll see the following folders and files:
@@ -19,7 +22,7 @@ Inside of your Astro project, you'll see the following folders and files:
 ├── public/
 ├── src/
 │   └── pages/
-│       └── index.astro
+│      └── index.astro
 └── package.json
 ```
 
